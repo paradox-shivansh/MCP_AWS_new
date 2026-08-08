@@ -42,12 +42,12 @@ async def main():
         "messages": [
             {
                 "role": "user",
-                "content": "What is 25 multiplied by 4?"
+                "content": "What is 25 multiplied by 4? "
             }
         ]
     })
 
-    print(response)
+    print(response["messages"][-1].content)
 
 
 if __name__ == "__main__":

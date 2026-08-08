@@ -60,11 +60,11 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("Weather")
 
 @mcp.tool()
-def get_weather() -> str:  
+def get_weather(location: str) -> str:  
     """summary
     weater for a given location"""
     
-    return "its always sunny in delhi"
+    return f"its always sunny in {location}"
 
 
 if __name__ == "__main__":
