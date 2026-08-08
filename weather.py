@@ -60,8 +60,15 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("Weather")
 
 @mcp.tool()
-def get_weather(location: str) -> str:  
+def get_weather() -> str:  
     """summary
     weater for a given location"""
     
     return "its always sunny in delhi"
+
+
+if __name__ == "__main__":
+    mcp.run(transport="streamable-http")
+    
+    # Transport is the method used for communication between the MCP client and your MCP server.
+    # streable-http is a transport that allows for streaming responses, which is useful for long-running tasks or when you want to send partial results back to the client as they become available.
