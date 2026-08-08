@@ -9,3 +9,4 @@ tavily-python
 # Python libraries
 langchain-mcp-adapters
 mcp
+requests
