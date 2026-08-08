@@ -14,3 +14,6 @@ FastMCP handles much of that infrastructure for you.
 
 # STDIO is particularly useful when your MCP server is running locally and the MCP client launches it.
 
+
+# client.py is used to connect the client to the mcp server and services of the tools you created we are using langchain_mcp adapters here
+
