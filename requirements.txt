@@ -1,0 +1,9 @@
+langchain
+langchain_community
+langchain_openai
+langchain_groq
+python-dotenv
+langchain_google-genai
+langchain-tavily
+tavily-python
+# Python libraries
