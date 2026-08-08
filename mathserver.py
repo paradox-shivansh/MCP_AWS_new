@@ -32,3 +32,11 @@ def subtract(a:int, b:int) -> int:
     Subtract two numbers
     returns the difference of a and b"""
     return a - b
+
+
+
+if __name__ == "__main__":
+    mcp.run(transport="stdio")
+    
+    # Transport is the method used for communication between the MCP client and your MCP server.
+    
