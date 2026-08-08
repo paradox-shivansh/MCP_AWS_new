@@ -1,6 +1,7 @@
-from langchain_mcp_adapters import MCPClient
+# from langchain_mcp_adapters.client import MCPClient
 from mcp.server.fastmcp import FastMCP
-from langgraph.prebuilt import ChatGroq
+from langchain_groq import ChatGroq
+from langchain_mcp_adapters.client import MultiServerMCPClient
 
 from dotenv import load_dotenv
 import os
@@ -9,6 +10,6 @@ load_dotenv()
 import asyncio
 
 async def main():
-    client = MultiServiceClient(
+    client =  MultiServerMCPClient(
         # pass
     )
